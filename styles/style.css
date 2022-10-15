@@ -9,9 +9,9 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* div, h1, h2, h3, img {
+div, h1, h2, h3, img {
   border: solid 1px red;
-} */
+}
 /* Настройки header */
 .header {
   height: 100vh;
@@ -59,6 +59,8 @@
 }
 
 .header__link {
+  text-decoration: none;
+  color: #2f80ed;
 
 }
 
@@ -96,6 +98,7 @@
   margin: 100px auto 0;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   min-height: 50px;
   width: 80%;
   min-width: 784px;
@@ -104,19 +107,30 @@
 
 .two-columns__brief {
   display: flex;
+  margin: 0;
   width: 175px;
   flex-direction: column;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
 }
 
 .two-columns__main-text {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  min-width: 784px;
 }
 
 .two-columns__paragraph {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+
 }
 
 .two-columns__paragraph:last-of-type {
@@ -124,5 +138,7 @@
 }
 
 .two-columns__span-accent {
-
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
 }
