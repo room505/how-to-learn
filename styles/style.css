@@ -10,9 +10,6 @@
 }
 
 
-/* div, h1, h2, h3, img, p {
-  border: solid 1px red;
-} */
 /* Настройки header */
 .header {
   height: 100vh;
@@ -210,6 +207,7 @@
 }
 
 .feynman__title {
+  margin: 100px auto 0;
   width: 648px;
   text-align: center;
   line-height: 1.15;
@@ -219,6 +217,7 @@
 }
 
 .feynman__subtitle {
+  margin: 70px auto 0;
   width: 648px;
   text-align: center;
   line-height: 51px;
@@ -227,9 +226,15 @@
 }
 
 .feynman__link {
+  lw: 51px;
+  font-size: 36px;
+  font-weight: normal;
   position: absolute;
   top: 50%;
   right: 48px;
+  color: #2f80ed;
+  ;
+  text-decoration: none;
 }
 
 /* Блок Кауфмана */
@@ -244,7 +249,6 @@
 }
 
 .section-title_theme_dark {
-  padding: 90px auto 0;
   color: white;
   z-index: 1;
 }
@@ -255,17 +259,19 @@
 }
 
 .table_theme_dark {
-  color: white;
   z-index: 1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-right: 0;
   margin-top: 80px;
   z-index: 1;
+}
+
+.table__heading_theme_dark {
+  color: white;
 }
 
 .table__text_theme_dark {
