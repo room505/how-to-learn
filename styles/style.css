@@ -163,7 +163,7 @@
   font-size: 24px;
   font-weight: normal;
   width: 60%;
-  text-align: center
+  text-align: center;
 }
 
 .table {
@@ -226,14 +226,13 @@
 }
 
 .feynman__link {
-  lw: 51px;
+  line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   position: absolute;
   top: 50%;
   right: 48px;
   color: #2f80ed;
-  ;
   text-decoration: none;
 }
 
