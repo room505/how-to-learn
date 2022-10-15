@@ -9,9 +9,9 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-div, h1, h2, h3, img {
+/* div, h1, h2, h3, img, p {
   border: solid 1px red;
-}
+} */
 /* Настройки header */
 .header {
   height: 100vh;
@@ -93,9 +93,12 @@ div, h1, h2, h3, img {
 }
 
 /* Блок description */
+.description {
+  margin: 100px auto 0;
+}
 
 .two-columns {
-  margin: 100px auto 0;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -141,4 +144,60 @@ div, h1, h2, h3, img {
   font-size: 24px;
   line-height: 34px;
   font-weight: 600;
+}
+
+/* Блок digits */
+
+.digits {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title {
+  padding: 0;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  width: 60%;
+  text-align: center;
+}
+
+.section-subtitle {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
+  text-align: center
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.table__text {
+  margin: 20px 0 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
 }
