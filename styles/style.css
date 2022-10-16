@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -43,6 +44,7 @@
   margin: 0;
   padding: 0;
   margin-left: 64px;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -54,6 +56,7 @@
   line-height: 25px;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
 .header__link {
@@ -92,10 +95,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  min-height: 50px;
   width: 80%;
-  min-width: 784px;
-
 }
 
 .two-columns__brief {
@@ -195,7 +195,7 @@
 
 /* Блок Фейнман */
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-image: url(../images/feynman.png);
   background-color: #f2f2f2;
   background-repeat: no-repeat;
@@ -279,6 +279,10 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
   z-index: 0;
   right: -210px;
@@ -289,6 +293,8 @@
 
 /* ФУТЕР */
 .footer {
+  /* padding: 60px 0 40px; */
+  box-sizing: border-box;
   padding: 60px 0 40px;
   display: flex;
   background-color: #1f1f1f;
@@ -302,11 +308,14 @@
   justify-content: space-between;
 }
 
-.footer__columns_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
 }
 
 .logo_place_footer {
@@ -318,17 +327,24 @@
   margin: 18px 0;
   color: white;
   line-height: 25px;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: normal;
 }
 
-.footer__columns_content_info {
-  display: block;
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
+.footer__columns_content_social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .footer__column-heading {
-  margin: 0 auto;
+  margin: 0;
   color: white;
   line-height: 30px;
   font-size: 18px;
@@ -336,11 +352,12 @@
 }
 
 .footer__column-links {
-  margin: 20px auto 16px;
+  margin: 20px 0 16px;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  box-sizing: border-box;
 }
 
 .footer__column-link {
@@ -355,4 +372,11 @@
   width: 16px;
   height: 16px;
   padding-right: 10px;
+}
+
+.footer__column-links-items {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
 }
