@@ -19,7 +19,7 @@
 }
 
 
-/* Настройки header */
+/* Шапка сайта, блок header */
 .header {
   height: 100vh;
   min-height: 600px;
@@ -30,7 +30,6 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  /* выше установили ограничения для секции */
 }
 
 .logo {
@@ -83,7 +82,6 @@
   z-index: 1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   position: absolute;
   top: 64px;
@@ -95,7 +93,7 @@
   animation: rotation linear 20s infinite;
 }
 
-/* Блок description */
+/* Секция, блок description */
 .description {
   margin: 100px auto 0;
 }
@@ -144,6 +142,135 @@
   font-size: 24px;
   line-height: 34px;
   font-weight: 600;
+}
+
+
+/* Секция, блок techniques */
+
+.techniques {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 100px;
+  width: 920px;
+}
+
+.cards__item {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__image {
+  margin: 0 40px;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin: 16px auto 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 16px auto 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Секция, блок video */
+
+.video {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__iframes {
+  margin: 0 auto 0;
+  display: flex;
+  position: relative;
+  top: 50px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  margin-right: 20px;
+}
+
+.video__iframe:last-of-type {
+  margin-right: 0;
+}
+
+/* Секция, блок oakley */
+
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: -1;
+}
+
+
+/* Секция, блок feynman */
+.feynman {
+  min-height: 890px;
+  background-image: url(../images/feynman.png);
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.feynman__title {
+  margin: 100px auto 0;
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  flex-grow: 0;
+}
+
+.feynman__subtitle {
+  margin: 70px auto 0;
+  width: 648px;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 /* Блок digits */
@@ -203,49 +330,6 @@
   font-weight: normal;
 }
 
-/* Блок Фейнман */
-.feynman {
-  min-height: 890px;
-  background-image: url(../images/feynman.png);
-  background-color: #f2f2f2;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.feynman__title {
-  margin: 100px auto 0;
-  width: 648px;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-  flex-grow: 0;
-}
-
-.feynman__subtitle {
-  margin: 70px auto 0;
-  width: 648px;
-  text-align: center;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-}
-
-.feynman__link {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  color: #2f80ed;
-  text-decoration: none;
-}
-
 /* Блок Кауфмана */
 .kaufman {
   padding: 90px 0;
@@ -299,6 +383,7 @@
   top: 0;
   width: 877px;
   height: 877px;
+  animation: rotation linear 20s infinite;
 }
 
 /* ФУТЕР */
