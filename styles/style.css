@@ -273,7 +273,7 @@
   text-decoration: none;
 }
 
-/* Блок digits */
+/* Секция, блок digits */
 
 .digits {
   padding: 100px 0;
@@ -330,7 +330,81 @@
   font-weight: normal;
 }
 
-/* Блок Кауфмана */
+/* Секция, блок khan */
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.khan__quote {
+  width: 790px;
+  margin: 50px 0 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 36px 0 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+.khan__quote-author-subtitle {
+  margin: 10px 0 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  margin: 68px 0 0;
+  display: flex;
+}
+
+.khan__book-pic {
+  background-image: url(../images_sprint-2/khan-book.jpg);
+  background-size: cover;
+  height: 620px;
+  width: 608px;
+  margin-right: 48px;
+}
+
+.khan__buy-link {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+/* Секция, блок kaufman */
 .kaufman {
   padding: 90px 0;
   background-color: #1f1f1f;
