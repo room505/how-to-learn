@@ -1,3 +1,5 @@
+@import url(../vendor/normalize.css);
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -391,7 +393,7 @@
 }
 
 .khan__book-pic {
-  background-image: url(../images_sprint-2/khan-book.jpg);
+  background-image: url(../images/khan-book.jpg);
   background-size: cover;
   height: 620px;
   width: 608px;
