@@ -14,98 +14,21 @@
 @import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
 @import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
-
-
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__description/cards__description.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__item/cards__item.css);
+@import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframes/video__iframes.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/oakley/oakley.css);
 /* Шапка сайта, блок header */
 /* Секция, блок description */
 /* Секция, блок techniques */
-
-.techniques {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 100px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0 100px;
-  width: 920px;
-}
-
-.cards__item {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cards__image {
-  margin: 0 40px;
-  height: 160px;
-  width: 160px;
-  border-radius: 50%;
-}
-
-.cards__title {
-  margin: 16px auto 0;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.cards__description {
-  margin: 16px auto 0;
-  line-height: 23px;
-  font-size: 18px;
-  font-weight: normal;
-  text-align: center;
-}
-
 /* Секция, блок video */
-
-.video {
-  display: flex;
-  padding-top: 100px;
-  flex-direction: column;
-  align-items: center;
-}
-
-.video__iframes {
-  margin: 0 auto 0;
-  display: flex;
-  position: relative;
-  top: 50px;
-}
-
-.video__iframe {
-  padding: 0;
-  width: 515px;
-  height: 316px;
-  border: none;
-  margin: 0;
-  margin-right: 20px;
-}
-
-.video__iframe:last-of-type {
-  margin-right: 0;
-}
-
 /* Секция, блок oakley */
-
-.oakley {
-  padding-top: 160px;
-  background-color: #f2f2f2;
-  position: relative;
-  z-index: -1;
-}
-
-
 /* Секция, блок feynman */
 .feynman {
   min-height: 890px;
