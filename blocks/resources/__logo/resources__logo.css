@@ -1,10 +1,6 @@
 .resources__logo {
-  transition: opacity .2s linear;
   height: 38px;
   width: 270px;
   display: block;
 }
 
-.resources__logo:hover {
-  opacity: .6;
-}
